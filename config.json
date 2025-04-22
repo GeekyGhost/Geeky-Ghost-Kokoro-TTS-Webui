@@ -1,0 +1,1 @@
+{"use_gpu": true, "default_voice": "af_heart", "max_chunk_size": 400, "crossfade_ms": 30, "max_history_entries": 20, "theme": "auto", "sample_rate": 24000} 
