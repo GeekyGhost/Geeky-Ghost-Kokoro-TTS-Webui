@@ -1,9 +1,8 @@
-# Geeky Kokoro TTS Webui
+# Geeky Ghost Kokoro TTS Webui
 
 A high-quality Text-to-Speech application with voice customization and blending capabilities, built using Gradio.
 
-<img width="594" alt="Screenshot 2025-04-22 195441" src="https://github.com/user-attachments/assets/f3108343-5a46-4287-b133-95725b19fad6" />
-
+![Kokoro TTS](https://raw.githubusercontent.com/username/kokoro-tts/main/images/screenshot.png)
 
 ## Features
 
@@ -27,13 +26,21 @@ A high-quality Text-to-Speech application with voice customization and blending 
 ### Option 1: Using the launcher (Windows)
 
 1. Make sure you have Python 3.8+ installed and added to your PATH
-2. Download or clone this repository
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/GeekyGhost/Geeky-Ghost-Kokoro-TTS-Webui.git
+   cd Geeky-Ghost-Kokoro-TTS-Webui
+   ```
 3. Run `run.bat` to automatically set up the environment and launch the application
 
 ### Option 2: Manual installation
 
 1. Make sure you have Python 3.8+ installed
-2. Download or clone this repository
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/GeekyGhost/Geeky-Ghost-Kokoro-TTS-Webui.git
+   cd Geeky-Ghost-Kokoro-TTS-Webui
+   ```
 3. Create a virtual environment:
    ```bash
    python -m venv venv
@@ -45,10 +52,26 @@ A high-quality Text-to-Speech application with voice customization and blending 
    ```bash
    pip install -r requirements.txt
    ```
+   
+   Note: For better audio processing, these additional packages are recommended:
+   ```bash
+   pip install resampy==0.4.2
+   pip install librosa>=0.10.0
+   ```
+   
 6. Run the application:
    ```bash
    python main.py
    ```
+
+### First Run Information
+
+On first run, the application will:
+1. Create necessary directories if they don't exist
+2. Download model files from Hugging Face if needed
+3. Set up default configuration
+
+The model will automatically download voice files as needed. The Kokoro TTS system uses the kokoro version 0.8.4 which avoids pickle-related issues found in some other versions.
 
 ## Usage
 
