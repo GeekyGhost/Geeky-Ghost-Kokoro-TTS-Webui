@@ -1,4 +1,4 @@
-# Kokoro TTS Studio
+# Geeky Kokoro TTS Webui
 
 A high-quality Text-to-Speech application with voice customization and blending capabilities, built using Gradio.
 
